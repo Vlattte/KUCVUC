@@ -1,0 +1,8 @@
+[submodule "eed-backend2"]
+	path = eed-backend2
+	url = https://github.com/Vlattte/eed-backend2.git
+	branch = dev
+[submodule "eed-frontend"]
+	path = eed-frontend
+	url = https://github.com/Lokol1337/eed-frontend.git
+	branch = dev
