@@ -29,9 +29,11 @@ cp ./nginx.conf /etc/nginx/nginx.conf
 sudo systemctl restart nginx
 ```
 
-eed-frontend - 185.50.203.136:80/eed-frontend <- proxy to -> localhost:8080/eed-frontend
-eed-backend - 185.50.203.136:8000 <- proxy to -> localhost:8083
-postgres - 185.50.203.136:5432 <- proxy to -> localhost:5432
+eed-frontend - <b>185.50.203.136:80/eed-frontend</b> <- proxy to -> <b>localhost:8080/eed-frontend</b>
+
+eed-backend - <b>185.50.203.136:8000</b> <- proxy to -> <b>localhost:8083</b>
+
+postgres - <b>185.50.203.136:5432</b> <- proxy to -> <b>localhost:5432</b>
 
 После этого в браузере можно сайт можно будет открыть по ip 
 http://185.50.203.136/eed-frontend#/
