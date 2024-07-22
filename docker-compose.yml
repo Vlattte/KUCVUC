@@ -1,0 +1,20 @@
+services:
+  eed-frontend:
+    build: ./eed-frontend
+    ports:
+      - "8080:8080"
+  eed-backend:
+    build: ./eed-backend2
+    network_mode: host
+  postgres-db:
+    image : postgres:15.1
+    environment:
+      POSTGRES_DB: "vuc"
+      POSTGRES_USER: "vuc"
+      POSTGRES_PASSWORD: "123456"
+    volumes:
+      - ./eed-backend2/configs/:/docker-entrypoint-initdb.d
+    network_mode: host
+# networks:
+#   db-net:
+#     name: driver-back
