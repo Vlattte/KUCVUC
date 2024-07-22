@@ -15,6 +15,9 @@ https://cloud.ru/docs/applications/ug/topics/faq/administration__open-port.html
 
 ### Для поднятия контейнеров выполнить: 
 ```cmd
+apt update
+apt install docker 
+apt install docker-compose
 sudo docker-compose up -d
 ```
 
